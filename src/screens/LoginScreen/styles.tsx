@@ -1,0 +1,80 @@
+import {StyleSheet} from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    position: 'relative',
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#fff',
+  },
+  circleContainer: {
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  firstCircle: {
+    position: 'absolute',
+    top: -120,
+    left: -50,
+    width: 350,
+    height: 350,
+    borderRadius: '50%',
+    backgroundColor: '#007BFF',
+    zIndex: 1,
+  },
+  secondCircle: {
+    position: 'absolute',
+    top: -100,
+    right: -40,
+    width: 350,
+    height: 350,
+    borderRadius: '50%',
+    backgroundColor: '#0074F0',
+  },
+  formContainer: {
+    position: 'relative',
+    zIndex: 2,
+    flex: 1,
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  input: {
+    height: 50,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    marginBottom: 15,
+    paddingHorizontal: 10,
+    backgroundColor: '#FFF',
+  },
+  passwordContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    marginBottom: 15,
+    paddingHorizontal: 10,
+    backgroundColor: '#FFF',
+  },
+  inputPassword: {
+    flex: 1,
+    height: 50,
+  },
+  button: {
+    backgroundColor: '#007BFF',
+    paddingVertical: 15,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+});
