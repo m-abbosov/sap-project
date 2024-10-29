@@ -11,8 +11,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import useLogin from '../../hooks/useLogin';
 
 const LoginScreen: React.FC = () => {
-  const [username, setUsername] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+  const [username, setUsername] = useState<string>('sb1\\aex_user01a');
+  const [password, setPassword] = useState<string>('3N(Z#vLJ');
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false);
   const {login, loading} = useLogin();
   const handleLogin = () => {
