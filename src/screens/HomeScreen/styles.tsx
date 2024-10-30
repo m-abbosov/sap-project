@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  icons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
