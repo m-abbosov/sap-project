@@ -17,8 +17,6 @@ const useLogin = () => {
         CompanyDB: config.COMPANY_DB,
       });
       const sessionId = response.data.SessionId;
-      console.log('data:', response.data);
-      console.log('sessionid:', sessionId);
 
       await AsyncStorage.setItem('sessionId', sessionId);
       service.reset('home');

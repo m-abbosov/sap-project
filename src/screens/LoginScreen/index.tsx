@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {
   ActivityIndicator,
+  Alert,
   Text,
   TextInput,
   TouchableOpacity,
@@ -19,7 +20,7 @@ const LoginScreen: React.FC = () => {
     if (username && password) {
       login(username, password);
     } else {
-      console.log('username or password is empty');
+      Alert.alert('username or password is empty');
     }
   };
 

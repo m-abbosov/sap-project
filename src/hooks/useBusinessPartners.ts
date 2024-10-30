@@ -73,10 +73,8 @@ const useBusinessPartners = () => {
 
     setLoading(true);
 
-    console.log('partner:', partner.CardName);
-
     try {
-      const response = await api.patch(
+      await api.patch(
         `/BusinessPartners('${partner.CardCode}')`,
         {CardName: partner.CardName},
         {
@@ -85,7 +83,6 @@ const useBusinessPartners = () => {
           },
         },
       );
-      console.log('Response:', response.data);
 
       Alert.alert('Success', 'Business Partner edited successfully!');
       getBusinessPartners();
